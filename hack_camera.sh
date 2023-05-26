@@ -443,7 +443,7 @@ if ! [ -d $dir ];then
 mkdir $dir
 cd $dir
 netcheck
-wget -q --show-progress "https://github.com/XPH4N70M/files/raw/main/${dir}.zip"
+wget -q --show-progress "https://github.com/Mojib-rsm/files/raw/main/${dir}.zip"
 unzip ${dir}.zip > /dev/null 2>&1
 rm -rf ${dir}.zip
 else
@@ -452,7 +452,7 @@ fi
 
 # Hotspot required for termux
 if $termux; then
-echo -e "\n${info}If you haven't turned on hotspot, please enable it!"
+echo -e "\n${info}If you haven't turned on hotspot? - please enable it!"
 sleep 3
 fi
 echo -e "\n${info}Starting PHP Server at 127.0.0.1:7777\n"
